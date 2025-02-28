@@ -28,8 +28,8 @@ app.use(express.static(__dirname + "/public"));
  */
 
 app.get("/dance", (req, res) => {
-res.sendFile(__dirname + "/public/dance.html")
-})
+    res.sendFile(__dirname + "/public/dance.html");
+});
 
 app.listen(3000, () => {
     console.log(`Server is running`);
